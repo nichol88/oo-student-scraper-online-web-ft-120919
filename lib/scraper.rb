@@ -9,7 +9,7 @@ class Scraper
     students.map{ |s|
       s[:name] = s[:id].gsub("-", " ").split("card")[0].strip
       s[:location] = s.children[1].css("p")[0].children.text
-      s[:profile_url]
+      s[:profile_url] = s.css("a")[0]["href"]
     }
 
     binding.pry
