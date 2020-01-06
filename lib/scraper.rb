@@ -25,7 +25,7 @@ class Scraper
     binding.pry
     socials.each{ |link|
       url = link[:href]
-      if url.include? "twitter" do
+      if url.include? "twitter"
         links[:twitter] = url
       elsif url.include? "github"
         links[:github] = url
