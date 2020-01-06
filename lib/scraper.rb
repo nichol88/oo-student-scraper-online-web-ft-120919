@@ -32,7 +32,7 @@ class Scraper
         links[:linkedin] = url
       end
     }
-
+    links
     binding.pry
   end
 
