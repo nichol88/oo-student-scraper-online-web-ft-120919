@@ -25,7 +25,7 @@ class Scraper
     socials.each_with_index{ |link, i|
       url = link[:href]
       if url.include? "twitter" do
-
+        links[i] = 
       end
     }
 
