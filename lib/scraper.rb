@@ -14,7 +14,7 @@ class Scraper
       f[:profile_url] = s.css("a")[0]["href"]
       result.push(f)
     }
-    binding.pry
+    #binding.pry
     result
   end
 
