@@ -37,7 +37,7 @@ class Scraper
     }
     binding.pry
     links[:profile_quote] = doc.css(".profile-quote").text.strip
-    links[:bio] = doc.css(".description-holder").children[0].text
+    links[:bio] = doc.css(".description-holder p").text
     links
   end
 
