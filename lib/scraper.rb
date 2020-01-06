@@ -26,6 +26,10 @@ class Scraper
       url = link[:href]
       if url.include? "twitter" do
         links[:twitter] = url
+      elsif url.include? "github"
+        links[:github] = url
+      elsif url.include? "linkedin"
+        links[:linkedin] = url
       end
     }
 
