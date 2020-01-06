@@ -31,6 +31,7 @@ class Scraper
       elsif url.include? "linkedin"
         links[:linkedin] = url
       end
+      end
     }
     #links[:blog] =
     links[:profile_quote] = doc.css(".profile_quote")[0].text
