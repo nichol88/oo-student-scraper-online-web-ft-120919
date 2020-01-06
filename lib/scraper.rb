@@ -36,7 +36,7 @@ class Scraper
       end
     }
     #links[:blog] =
-    links[:profile_quote] = doc.css(".profile_quote")[0].text
+    links[:profile_quote] = doc.css(".profile-quote")[0].text
     links[:bio] = doc.css(".description-holder").children[0].text
     links
   end
