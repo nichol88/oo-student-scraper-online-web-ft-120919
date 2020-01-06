@@ -22,7 +22,7 @@ class Scraper
     doc = Nokogiri::HTML.parse(open(profile_url))
     socials = doc.css(".social-icon-container a")
     links = {}
-    binding.pry
+    #binding.pry
     socials.each{ |link|
       url = link[:href]
       if url.include? "twitter"
