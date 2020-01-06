@@ -31,7 +31,7 @@ class Scraper
       elsif url.include? "linkedin"
         links[:linkedin] = url
       else
-        
+        puts " "
       end
     }
     #links[:blog] =
